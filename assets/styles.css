@@ -294,6 +294,24 @@ body {
   }
 }
 
+/* CV Viewer */
+.cv-viewer {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.cv-viewer iframe {
+  min-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .cv-viewer iframe {
+    height: 600px;
+    min-height: 600px;
+  }
+}
+
 @media (min-width: 640px) {
   .project-card { grid-column: span 6; }
 }
