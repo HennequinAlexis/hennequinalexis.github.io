@@ -2,17 +2,17 @@
 * { box-sizing: border-box; }
 html { font-size: 16px; }
 :root {
-  --bg: #f5f7fa;
+  --bg: #f8f9fa;
   --bg-alt: #ffffff;
-  --text: #1a1f2e;
-  --muted: #5a6c7d;
-  --primary: #6366f1;
-  --primary-strong: #4f46e5;
+  --text: #111827;
+  --muted: #4b5563;
+  --primary: #4f46e5;
+  --primary-strong: #4338ca;
   --card: #ffffff;
-  --border: rgba(99,102,241,0.2);
-  --shadow: 0 10px 30px rgba(99,102,241,0.15);
-  --radius: 14px;
-  --radius-sm: 10px;
+  --border: #e5e7eb;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --radius-sm: 8px;
   --container: 1100px;
 }
 
@@ -20,10 +20,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(1200px 600px at 10% -10%, rgba(99, 102, 241, 0.25), transparent 60%),
-              radial-gradient(1000px 500px at 90% 10%, rgba(236, 72, 153, 0.2), transparent 60%),
-              radial-gradient(800px 400px at 50% 50%, rgba(59, 130, 246, 0.15), transparent 70%),
-              var(--bg);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -38,10 +35,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(12px);
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 2px 10px rgba(99,102,241,0.1);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .site-header .container { padding: 28px 20px; }
 .site-header h1 {
@@ -65,26 +62,22 @@ body {
 
 .project-card {
   grid-column: span 12;
-  background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.95));
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px 22px 18px;
+  padding: 24px;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
 }
 .project-card::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  pointer-events: none;
-  background: radial-gradient(450px 200px at 0% 0%, rgba(99,102,241,0.15), transparent 50%);
+  display: none;
 }
 .project-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(99,102,241,0.5);
-  box-shadow: 0 16px 40px rgba(99,102,241,0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary);
 }
 
 .project-title {
@@ -111,18 +104,19 @@ body {
 /* Buttons, tags, utilities */
 .tag {
   display: inline-block;
-  padding: 6px 10px;
-  background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15));
+  padding: 6px 12px;
+  background: #eef2ff;
   color: var(--primary-strong);
-  border: 1px solid rgba(99,102,241,0.4);
+  border: 1px solid #e0e7ff;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 .tag:hover {
-  background: linear-gradient(135deg, rgba(99,102,241,0.25), rgba(139,92,246,0.25));
-  border-color: rgba(99,102,241,0.6);
+  background: #e0e7ff;
+  border-color: #c7d2fe;
   transform: translateY(-1px);
 }
 
