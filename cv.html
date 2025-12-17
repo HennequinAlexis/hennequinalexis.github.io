@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV — Alexis Hennequin</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container">
-    <h1>Curriculum Vitae</h1>
-    <p class="subtitle">Téléchargez ou consultez mon CV en ligne</p>
-  </div>
-</header>
-
-<main class="container">
-  <section class="projects-grid">
-    <article class="project-card" style="grid-column: span 12;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
-        <h2 class="project-title" style="margin: 0;">Mon CV</h2>
-        <a class="tag" href="documents/Alexis_Hennequin_Q3_CV-2.pdf" download style="text-decoration: none; font-size: 1rem; padding: 10px 20px;">
-          📥 Télécharger le CV (PDF)
-        </a>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-branding">
+        <h1>Curriculum Vitae</h1>
+        <p class="subtitle">Téléchargez ou consultez mon CV en ligne</p>
       </div>
-      <p style="margin-bottom: 20px; color: var(--muted);">
-        Consultez mon CV ci-dessous ou téléchargez-le pour l'imprimer ou le partager.
-      </p>
-      <div class="cv-viewer">
-        <iframe 
-          src="documents/Alexis_Hennequin_Q3_CV-2.pdf#toolbar=1&navpanes=1&scrollbar=1" 
-          width="100%" 
-          height="800px"
-          style="border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"
-          title="CV Alexis Hennequin">
-          <p>
-            Votre navigateur ne peut pas afficher les PDF. 
-            <a href="documents/Alexis_Hennequin_Q3_CV-2.pdf" download>Téléchargez le CV</a> à la place.
-          </p>
-        </iframe>
-      </div>
-    </article>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="cv.html" class="active">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <article class="project-card" style="grid-column: span 12; text-align: center;">
-      <a class="tag" href="index.html" style="text-decoration: none; margin: 0 10px;">← Retour à l'accueil</a>
-      <a class="tag" href="contact.html" style="text-decoration: none; margin: 0 10px;">Me contacter →</a>
-    </article>
-  </section>
-</main>
+  <main class="container">
+    <section class="projects-grid">
+      <article class="project-card" style="grid-column: span 12;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
+          <h2 class="project-title" style="margin: 0;">Mon CV</h2>
+          <a class="tag" href="documents/Alexis_Hennequin_Q3_CV-2.pdf" download
+            style="text-decoration: none; font-size: 1rem; padding: 10px 20px;">
+            📥 Télécharger le CV (PDF)
+          </a>
+        </div>
+        <p style="margin-bottom: 20px; color: var(--muted);">
+          Consultez mon CV ci-dessous ou téléchargez-le pour l'imprimer ou le partager.
+        </p>
+        <div class="cv-viewer">
+          <iframe src="documents/Alexis_Hennequin_Q3_CV-2.pdf#toolbar=1&navpanes=1&scrollbar=1" width="100%"
+            height="800px"
+            style="border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"
+            title="CV Alexis Hennequin">
+            <p>
+              Votre navigateur ne peut pas afficher les PDF.
+              <a href="documents/Alexis_Hennequin_Q3_CV-2.pdf" download>Téléchargez le CV</a> à la place.
+            </p>
+          </iframe>
+        </div>
+      </article>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2025 - Portfolio Alexis Hennequin</p>
-  </div>
-</footer>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 - Portfolio Alexis Hennequin</p>
+    </div>
+  </footer>
 </body>
-</html>
 
+</html>

@@ -1,147 +1,182 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos de moi</title>
     <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-<header class="site-header">
-    <div class="container">
-        <h1>À propos de moi</h1>
-        <p class="subtitle">Parcours, motivations et objectifs</p>
-    </div>
-</header>
-
-<main class="container">
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name-large">Alexis Hennequin</h1>
-                <p class="hero-subtitle">Développeur Back-End & Étudiant en BUT Informatique</p>
-                <p class="hero-tagline">
-                    En quête d'excellence technique et d'innovation, je transforme des problématiques complexes en solutions élégantes et performantes.
-                </p>
-                
-                <div class="hero-sections">
-                    <div class="hero-section-block">
-                        <h3 class="hero-section-title">📚 Mon parcours</h3>
-                        <p>
-                            Passionné d'informatique depuis ma découverte de <strong>Python en 2021</strong>, j'ai développé une expertise solide 
-                            en développement back-end à travers ma formation en <strong>BUT Informatique à Montpellier</strong>. 
-                            Autodidacte dans l'âme, j'ai complété mon cursus académique par un apprentissage continu des technologies 
-                            émergentes et des meilleures pratiques du secteur.
-                        </p>
-                    </div>
-
-                    <div class="hero-section-block">
-                        <h3 class="hero-section-title">🎯 Ma vision professionnelle</h3>
-                        <p>
-                            L'avenir du numérique se situe à la croisée de la <strong>sécurité des données</strong> et de l'<strong>innovation technologique</strong>. 
-                            Je m'oriente vers la <strong>cybersécurité</strong> et l'<strong>informatique quantique</strong>, deux domaines en pleine expansion 
-                            où les défis techniques stimulent ma curiosité et mon désir d'apprendre. Mon objectif : intégrer une 
-                            <strong>école d'ingénieurs spécialisée (parcours DACS)</strong> pour approfondir mes compétences et contribuer à des projets d'envergure.
-                        </p>
-                    </div>
-
-                    <div class="hero-section-block">
-                        <h3 class="hero-section-title">💪 Mes atouts</h3>
-                        <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                            <li><strong>Rigueur technique</strong> : Maîtrise approfondie des architectures back-end et des bases de données</li>
-                            <li><strong>Polyvalence linguistique</strong> : Capacité à évoluer dans des environnements internationaux</li>
-                            <li><strong>Apprentissage continu</strong> : Veille technologique constante et adaptation rapide aux nouvelles technologies</li>
-                            <li><strong>Approche méthodique</strong> : De solides bases scientifiques (mathématiques, physique) qui nourrissent mon raisonnement logique</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="hero-tech">
-                    <p class="tech-label">Technologies maîtrisées</p>
-                    <div class="tech-tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">C</span>
-                        <span class="tag">PL/SQL</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </div>
-                <p class="hero-cta">
-                    Parcourez mon portfolio pour découvrir mes réalisations et mon parcours.
-                </p>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-branding">
+                <h1>À propos de moi</h1>
+                <p class="subtitle">Parcours, motivations et objectifs</p>
             </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section class="projects-grid" style="grid-template-columns: repeat(12, 1fr);">
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name-large">Alexis Hennequin</h1>
+                    <p class="hero-subtitle">Développeur Back-End & Étudiant en BUT Informatique</p>
+                    <p class="hero-tagline">
+                        En quête d'excellence technique et d'innovation, je transforme des problématiques complexes en
+                        solutions élégantes et performantes.
+                    </p>
 
-        <article class="project-card" style="grid-column: span 12;">
-            <h2 class="project-title">🔥 Une passion devenue vocation</h2>
-            <p>
-                Mon intérêt pour l'informatique a débuté en <strong>2021</strong>, lorsqu'un mentor m'a initié à <strong>Python</strong>. 
-                Depuis, cette curiosité initiale s'est transformée en une véritable passion pour le <strong>développement back-end</strong>, 
-                où chaque ligne de code représente un défi technique à relever avec précision.
-            </p>
-            <p>
-                La raison pour laquelle j'ai choisi de faire un <strong>BUT</strong>, c'est parce que je voulais suivre une formation qui se situe 
-                entre le niveau d'une prépa et celui d'une licence. Après de nombreuses recherches, j'ai découvert qu'avec un BUT, je pouvais 
-                atteindre un niveau comparable à celui d'une prépa, ce qui est un atout lors de la candidature à une école d'ingénieurs pour un master.
-            </p>
-        </article>
+                    <div class="hero-sections">
+                        <div class="hero-section-block">
+                            <h3 class="hero-section-title">📚 Mon parcours</h3>
+                            <p>
+                                Passionné d'informatique depuis ma découverte de <strong>Python en 2021</strong>, j'ai
+                                développé une expertise solide
+                                en développement back-end à travers ma formation en <strong>BUT Informatique à
+                                    Montpellier</strong>.
+                                Autodidacte dans l'âme, j'ai complété mon cursus académique par un apprentissage continu
+                                des technologies
+                                émergentes et des meilleures pratiques du secteur.
+                            </p>
+                        </div>
 
-        <article class="project-card" style="grid-column: span 12;">
-            <h2 class="project-title">🚀 Mes ambitions</h2>
-            <p>
-                À l'ère de la transformation numérique, je vise deux domaines stratégiques :
-            </p>
-            <p>
-                <strong>La cybersécurité</strong> : protéger les infrastructures critiques face à des menaces en constante évolution. 
-                De nos jours, de plus en plus d'entreprises ont besoin de protéger leurs données. De plus, les compétences des hackers 
-                évoluent constamment. La demande pour des experts en cybersécurité continuera donc de croître.
-            </p>
-            <p>
-                <strong>L'informatique quantique</strong> : participer à la prochaine révolution technologique. Je pense que cela représente 
-                la prochaine étape du monde numérique.
-            </p>
-            <p>
-                Mon projet professionnel s'articule autour d'une poursuite d'études en <strong>école d'ingénieurs (spécialisation DACS)</strong> 
-                pour atteindre l'excellence dans ces domaines.
-            </p>
-        </article>
+                        <div class="hero-section-block">
+                            <h3 class="hero-section-title">🎯 Ma vision professionnelle</h3>
+                            <p>
+                                L'avenir du numérique se situe à la croisée de la <strong>sécurité des données</strong>
+                                et de l'<strong>innovation technologique</strong>.
+                                Je m'oriente vers la <strong>cybersécurité</strong> et l'<strong>informatique
+                                    quantique</strong>, deux domaines en pleine expansion
+                                où les défis techniques stimulent ma curiosité et mon désir d'apprendre. Mon objectif :
+                                intégrer une
+                                <strong>école d'ingénieurs spécialisée (parcours DACS)</strong> pour approfondir mes
+                                compétences et contribuer à des projets d'envergure.
+                            </p>
+                        </div>
 
-        <article class="project-card" style="grid-column: span 12;">
-            <h2 class="project-title">⚙️ Ma méthode de travail</h2>
-            <p>
-                Je privilégie une <strong>approche rigoureuse et structurée</strong>, nourrie par mes compétences scientifiques et ma capacité 
-                à résoudre des problèmes complexes. Chaque projet est une opportunité d'apprentissage, où je combine recherche théorique 
-                et expérimentation pratique pour produire des solutions robustes et évolutives.
-            </p>
-            <p>
-                Pour réussir, j'ai besoin d'approfondir mes connaissances sur les systèmes et d'apprendre les différentes méthodes permettant 
-                de sécuriser un système, notamment les bases de données. Je dois également consacrer plus de temps à retravailler ce que nous 
-                apprenons en cours.
-            </p>
-            <p>
-                J'ai également obtenu de très bonnes notes en mathématiques et en physique-chimie, ce qui me donne confiance en mes capacités 
-                de raisonnement logique et scientifique.
-            </p>
-        </article>
+                        <div class="hero-section-block">
+                            <h3 class="hero-section-title">💪 Mes atouts</h3>
+                            <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+                                <li><strong>Rigueur technique</strong> : Maîtrise approfondie des architectures back-end
+                                    et des bases de données</li>
+                                <li><strong>Polyvalence linguistique</strong> : Capacité à évoluer dans des
+                                    environnements internationaux</li>
+                                <li><strong>Apprentissage continu</strong> : Veille technologique constante et
+                                    adaptation rapide aux nouvelles technologies</li>
+                                <li><strong>Approche méthodique</strong> : De solides bases scientifiques
+                                    (mathématiques, physique) qui nourrissent mon raisonnement logique</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <article class="project-card" style="grid-column: span 12; text-align: center;">
-            <a class="tag" href="projets.html" style="text-decoration: none; margin: 0 10px;">Voir mes projets →</a>
-            <a class="tag" href="cv.html" style="text-decoration: none; margin: 0 10px;">📄 Mon CV →</a>
-            <a class="tag" href="contact.html" style="text-decoration: none; margin: 0 10px;">Me contacter →</a>
-        </article>
-    </section>
-</main>
+                    <div class="hero-tech">
+                        <p class="tech-label">Technologies maîtrisées</p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">C</span>
+                            <span class="tag">PL/SQL</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaFX</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <p class="hero-cta">
+                        Parcourez mon portfolio pour découvrir mes réalisations et mon parcours.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>© 2025 - Portfolio</p>
-    </div>
-</footer>
+        <section class="projects-grid" style="grid-template-columns: repeat(12, 1fr);">
+
+            <article class="project-card" style="grid-column: span 12;">
+                <h2 class="project-title">🔥 Une passion devenue vocation</h2>
+                <p>
+                    Mon intérêt pour l'informatique a débuté en <strong>2021</strong>, lorsqu'un mentor m'a initié à
+                    <strong>Python</strong>.
+                    Depuis, cette curiosité initiale s'est transformée en une véritable passion pour le
+                    <strong>développement back-end</strong>,
+                    où chaque ligne de code représente un défi technique à relever avec précision.
+                </p>
+                <p>
+                    La raison pour laquelle j'ai choisi de faire un <strong>BUT</strong>, c'est parce que je voulais
+                    suivre une formation qui se situe
+                    entre le niveau d'une prépa et celui d'une licence. Après de nombreuses recherches, j'ai découvert
+                    qu'avec un BUT, je pouvais
+                    atteindre un niveau comparable à celui d'une prépa, ce qui est un atout lors de la candidature à une
+                    école d'ingénieurs pour un master.
+                </p>
+            </article>
+
+            <article class="project-card" style="grid-column: span 12;">
+                <h2 class="project-title">🚀 Mes ambitions</h2>
+                <p>
+                    À l'ère de la transformation numérique, je vise deux domaines stratégiques :
+                </p>
+                <p>
+                    <strong>La cybersécurité</strong> : protéger les infrastructures critiques face à des menaces en
+                    constante évolution.
+                    De nos jours, de plus en plus d'entreprises ont besoin de protéger leurs données. De plus, les
+                    compétences des hackers
+                    évoluent constamment. La demande pour des experts en cybersécurité continuera donc de croître.
+                </p>
+                <p>
+                    <strong>L'informatique quantique</strong> : participer à la prochaine révolution technologique. Je
+                    pense que cela représente
+                    la prochaine étape du monde numérique.
+                </p>
+                <p>
+                    Mon projet professionnel s'articule autour d'une poursuite d'études en <strong>école d'ingénieurs
+                        (spécialisation DACS)</strong>
+                    pour atteindre l'excellence dans ces domaines.
+                </p>
+            </article>
+
+            <article class="project-card" style="grid-column: span 12;">
+                <h2 class="project-title">⚙️ Ma méthode de travail</h2>
+                <p>
+                    Je privilégie une <strong>approche rigoureuse et structurée</strong>, nourrie par mes compétences
+                    scientifiques et ma capacité
+                    à résoudre des problèmes complexes. Chaque projet est une opportunité d'apprentissage, où je combine
+                    recherche théorique
+                    et expérimentation pratique pour produire des solutions robustes et évolutives.
+                </p>
+                <p>
+                    Pour réussir, j'ai besoin d'approfondir mes connaissances sur les systèmes et d'apprendre les
+                    différentes méthodes permettant
+                    de sécuriser un système, notamment les bases de données. Je dois également consacrer plus de temps à
+                    retravailler ce que nous
+                    apprenons en cours.
+                </p>
+                <p>
+                    J'ai également obtenu de très bonnes notes en mathématiques et en physique-chimie, ce qui me donne
+                    confiance en mes capacités
+                    de raisonnement logique et scientifique.
+                </p>
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 - Portfolio</p>
+        </div>
+    </footer>
 </body>
+
 </html>
