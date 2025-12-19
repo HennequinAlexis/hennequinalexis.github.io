@@ -29,21 +29,38 @@
   <main class="container">
     <section class="projects-grid">
       <article class="project-card" style="grid-column: span 12;">
-        <h2 class="project-title">Résumé</h2>
+        <h2 class="project-title">Architecture Distribuée</h2>
         <p>
-          Conception d’une application d’enchères comprenant communication réseau et logique métier.
-          Mise en place de couches (modèle, service, transport) et de flux temps-réel via sockets.
+          Ce projet de fin de semestre avait pour but de concevoir un système d'enchères en temps réel. La complexité
+          résidait dans la communication instantanée entre le serveur et les multiples clients (enchérisseurs).
+        </p>
+        <p>
+          Nous avons dû implémenter notre propre protocole de communication au-dessus de TCP/IP pour gérer les offres,
+          les surenchères et la clôture des ventes.
         </p>
       </article>
 
       <article class="project-card" style="grid-column: span 12;">
-        <h2 class="project-title">Points clés</h2>
-        <ul class="project-meta">
-          <li>Langages/Frameworks : Java, Sockets, Spring Boot</li>
-          <li>Architecture Client/Serveur (Sockets)</li>
-          <li>Architecture n-tiers (Controller, Service, Repository)</li>
-          <li>Gestion de la concurrence (Synchronized)</li>
+        <h2 class="project-title">Gestion de la Concurrence</h2>
+        <p>
+          L'un des défis majeurs était la gestion des accès concurrents.
+        </p>
+        <ul class="project-meta" style="margin-top: 15px;">
+          <li><strong>Threads & Sockets</strong> : Chaque client connecté est géré par un thread dédié sur le serveur,
+            permettant de traiter plusieurs requêtes simultanément sans bloquer l'application.</li>
+          <li><strong>Synchronisation</strong> : Utilisation de blocs <code>synchronized</code> pour garantir
+            l'intégrité des données (ex: éviter que deux personnes enchérissent au même prix au même moment).</li>
+          <li><strong>Architecture N-Tiers</strong> : Séparation claire entre la couche de présentation (Client), la
+            logique métier (Service) et la persistance des données (DAO).</li>
         </ul>
+      </article>
+
+      <article class="project-card" style="grid-column: span 12;">
+        <h2 class="project-title">Persistance et Fiabilité</h2>
+        <p>
+          Les données des utilisateurs et des objets en vente sont stockées de manière persistante, assurant qu'aucune
+          information n'est perdue en cas de redémarrage du serveur.
+        </p>
       </article>
     </section>
   </main>
