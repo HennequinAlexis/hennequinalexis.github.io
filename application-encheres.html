@@ -58,105 +58,38 @@
       <article class="project-card" style="grid-column: span 12;">
         <h2 class="project-title">Persistance et Fiabilité</h2>
         <p>
-          <!DOCTYPE html>
-          <html lang="fr">
+          Les données des utilisateurs et des objets en vente sont stockées de manière persistante, assurant qu'aucune
+          information n'est perdue en cas de redémarrage du serveur.
+        </p>
+      </article>
+      <article class="project-card" style="grid-column: span 12;">
+        <h2 class="project-title">Aperçu de l'application</h2>
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="img/image-enchere.png" alt="Interface Enchères 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/image-enchere2.png" alt="Interface Enchères 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/image-enchere3.png" alt="Interface Enchères 3">
+          </div>
+          <div class="carousel-slide">
+            <img src="img/image.png" alt="Interface Enchères 4">
+          </div>
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+      </article>
+    </section>
+  </main>
 
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Application d’enchères — Projet</title>
-            <link rel="stylesheet" href="assets/styles.css" />
-          </head>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 - Portfolio Alexis Hennequin</p>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
 
-          <body>
-            <header class="site-header">
-              <div class="container">
-                <div class="header-branding">
-                  <h1>Application d’enchères</h1>
-                  <p class="subtitle">Java, sockets, Spring Boot</p>
-                </div>
-                <nav class="main-nav">
-                  <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </header>
-
-            <main class="container">
-              <section class="projects-grid">
-                <article class="project-card" style="grid-column: span 12;">
-                  <h2 class="project-title">Architecture Distribuée</h2>
-                  <p>
-                    Ce projet de fin de semestre avait pour but de concevoir un système d'enchères en temps réel. La
-                    complexité
-                    résidait dans la communication instantanée entre le serveur et les multiples clients
-                    (enchérisseurs).
-                  </p>
-                  <p>
-                    Nous avons dû implémenter notre propre protocole de communication au-dessus de TCP/IP pour gérer les
-                    offres,
-                    les surenchères et la clôture des ventes.
-                  </p>
-                </article>
-
-                <article class="project-card" style="grid-column: span 12;">
-                  <h2 class="project-title">Gestion de la Concurrence</h2>
-                  <p>
-                    L'un des défis majeurs était la gestion des accès concurrents.
-                  </p>
-                  <ul class="project-meta" style="margin-top: 15px;">
-                    <li><strong>Threads & Sockets</strong> : Chaque client connecté est géré par un thread dédié sur le
-                      serveur,
-                      permettant de traiter plusieurs requêtes simultanément sans bloquer l'application.</li>
-                    <li><strong>Synchronisation</strong> : Utilisation de blocs <code>synchronized</code> pour garantir
-                      l'intégrité des données (ex: éviter que deux personnes enchérissent au même prix au même moment).
-                    </li>
-                    <li><strong>Architecture N-Tiers</strong> : Séparation claire entre la couche de présentation
-                      (Client), la
-                      logique métier (Service) et la persistance des données (DAO).</li>
-                  </ul>
-                </article>
-
-                <article class="project-card" style="grid-column: span 12;">
-                  <h2 class="project-title">Persistance et Fiabilité</h2>
-                  <p>
-                    Les données des utilisateurs et des objets en vente sont stockées de manière persistante, assurant
-                    qu'aucune
-                    information n'est perdue en cas de redémarrage du serveur.
-                  </p>
-                </article>
-                <article class="project-card" style="grid-column: span 12;">
-                  <h2 class="project-title">Aperçu de l'application</h2>
-                  <div class="carousel-container">
-                    <div class="carousel-slide active">
-                      <img src="img/image-enchere.png" alt="Interface Enchères 1">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="img/image-enchere2.png" alt="Interface Enchères 2">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="img/image-enchere3.png" alt="Interface Enchères 3">
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="img/image.png" alt="Interface Enchères 4">
-                    </div>
-                    <button class="carousel-btn prev">&#10094;</button>
-                    <button class="carousel-btn next">&#10095;</button>
-                  </div>
-                </article>
-              </section>
-            </main>
-
-            <footer class="site-footer">
-              <div class="container">
-                <p>© 2025 - Portfolio Alexis Hennequin</p>
-              </div>
-            </footer>
-            <script src="assets/script.js"></script>
-          </body>
-
-          </html>
+</html>
