@@ -436,6 +436,38 @@ body {
   }
 }
 
+/* Compétences Page */
+.competence-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-strong);
+  font-weight: 600;
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.1));
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.competence-content {
+  margin-top: 25px;
+}
+
+.competence-subtitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 20px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(79, 70, 229, 0.2);
+}
+
+.competence-content p {
+  margin: 0 0 15px;
+  line-height: 1.7;
+}
+
 @media (min-width: 640px) {
   box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
   border-color: rgba(59, 130, 246, 0.3);
